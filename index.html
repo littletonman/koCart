@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KO Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+
+      <h1>Product</h1>
+      <div>
+        <strong>ID:</strong>
+        <span data-bind="text:product.id"></span><br/>
+        <strong>Name:</strong>
+        <span data-bind="text:product.name"></span><br/>
+        <strong>Price:</strong>
+        <span data-bind="text:product.price"></span><br/>
+        <strong>Stock:</strong>
+        <span data-bind="text:product.stock"></span>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<!-- libraries -->
+<script type="text/javascript" src="js/vendors/jquery.min.js"></script>
+<script type="text/javascript" src="js/vendors/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vendors/knockout.debug.js"></script>
+<script type="text/javascript" src="js/models/product.js"></script>
+<script type="text/javascript" src="js/viewmodel.js"></script>
+</body>
+</html>
